@@ -14,13 +14,13 @@ public class Driver : MonoBehaviour
 
     void Start()
     {
-        transform.Rotate(0, 0, 45);
+
     }
 
 
     void Update()
     {
-
+        transform.Rotate(0, 0, 45);
     }
 
     #endregion
