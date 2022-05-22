@@ -20,7 +20,8 @@ public class Driver : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(0, 0, 0.2f);
+        //transform.Rotate(0, 0, 0.2f);
+        transform.Translate(0, 0.01f, 0);
     }
 
     #endregion
