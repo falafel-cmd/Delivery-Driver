@@ -14,7 +14,7 @@ public class Driver : MonoBehaviour
 
     void Start()
     {
-
+        transform.Rotate(0, 0, 45);
     }
 
 
