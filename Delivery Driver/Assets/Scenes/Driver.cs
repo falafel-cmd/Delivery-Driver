@@ -8,8 +8,8 @@ public class Driver : MonoBehaviour
 {
 
     #region Variables
-    float steerSpeed = 0.2f;
-    float moveSpeed = 0.01f;
+    [SerializeField] float steerSpeed = 0.2f;
+    [SerializeField] float moveSpeed = 0.01f;
     #endregion
 
     #region Unity Methods
