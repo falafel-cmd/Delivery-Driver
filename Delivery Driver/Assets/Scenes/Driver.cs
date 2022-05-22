@@ -8,6 +8,8 @@ public class Driver : MonoBehaviour
 {
 
     #region Variables
+    float steerSpeed = 0.2f;
+    float moveSpeed = 0.01f;
     #endregion
 
     #region Unity Methods
@@ -20,8 +22,8 @@ public class Driver : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(0, 0, 0.2f);
-        transform.Translate(0, 0.01f, 0);
+        transform.Rotate(0, 0, steerSpeed);
+        transform.Translate(0, moveSpeed, 0);
     }
 
     #endregion
