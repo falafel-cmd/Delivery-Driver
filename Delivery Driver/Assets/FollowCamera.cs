@@ -13,7 +13,7 @@ public class FollowCamera : MonoBehaviour
 
 	#region Unity Methods
 
-    void Update()
+    void LateUpdate()
     {
 		transform.position = objectToFollow.transform.position + new Vector3(0, 0, -10);
     }
