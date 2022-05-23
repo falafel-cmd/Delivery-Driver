@@ -13,7 +13,7 @@ public class Collision : MonoBehaviour
 	#region Unity Methods
 	private void OnCollisionEnter2D(Collision2D other)
 	{
-		Debug.Log("You hit the imaginary rock!");
+		Debug.Log("Ouch!");
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
