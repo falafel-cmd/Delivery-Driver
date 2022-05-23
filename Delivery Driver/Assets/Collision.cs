@@ -15,6 +15,11 @@ public class Collision : MonoBehaviour
 	{
 		Debug.Log("You hit the imaginary rock!");
 	}
+
+	private void OnTriggerEnter2d()
+	{
+		Debug.Log("Picked up package");
+	}
 	#endregion
 
 }
