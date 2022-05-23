@@ -8,21 +8,16 @@ public class FollowCamera : MonoBehaviour
 {
 
 	#region Variables
+	[SerializeField] GameObject objectToFollow;
 	#endregion
-	
-	#region Unity Methods
-	
-    void Start()
-    {
-        
-    }
 
+	#region Unity Methods
 
     void Update()
     {
-        
+		transform.position = objectToFollow.transform.position + new Vector3(0, 0, -10);
     }
-	
+
 	#endregion
-	
+
 }
