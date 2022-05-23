@@ -16,7 +16,7 @@ public class Collision : MonoBehaviour
 		Debug.Log("You hit the imaginary rock!");
 	}
 
-	private void OnTriggerEnter2d()
+	private void OnTriggerEnter2D(Collider2D other)
 	{
 		Debug.Log("Picked up package");
 	}
