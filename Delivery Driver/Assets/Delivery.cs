@@ -9,6 +9,7 @@ public class Delivery : MonoBehaviour
 
 	#region Variables
 	bool hasPackage = false;
+	[SerializeField] float deletionDelay = 1.0f;
 	#endregion
 
 	#region Unity Methods
@@ -19,9 +20,10 @@ public class Delivery : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "Package")
+		if (other.tag == "Package" && hasPackage == false)
 		{
 			Debug.Log("Picked up the Package!");
+			Destroy(this.gameObject, deletionDelay);
 			hasPackage = true;
 		}
 
@@ -30,6 +32,7 @@ public class Delivery : MonoBehaviour
 			if (hasPackage == true)
 			{
 				Debug.Log("Dropped off the Package!");
+				hasPackage = false;
 			} else
 			{
 				Debug.Log("You haven't picked up my package!");
