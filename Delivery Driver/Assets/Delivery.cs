@@ -9,7 +9,7 @@ public class Delivery : MonoBehaviour
 
 	#region Variables
 	bool hasPackage = false;
-	[SerializeField] float deletionDelay = 1.0f;
+	[SerializeField] float deletionDelay = 0.5f;
 	#endregion
 
 	#region Unity Methods
@@ -23,7 +23,7 @@ public class Delivery : MonoBehaviour
 		if (other.tag == "Package" && hasPackage == false)
 		{
 			Debug.Log("Picked up the Package!");
-			Destroy(this.gameObject, deletionDelay);
+			Destroy(other.gameObject, deletionDelay);
 			hasPackage = true;
 		}
 
