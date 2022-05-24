@@ -8,6 +8,7 @@ public class Delivery : MonoBehaviour
 {
 
 	#region Variables
+	bool hasPackage = false;
 	#endregion
 
 	#region Unity Methods
@@ -21,11 +22,18 @@ public class Delivery : MonoBehaviour
 		if (other.tag == "Package")
 		{
 			Debug.Log("Picked up the Package!");
+			hasPackage = true;
 		}
 
 		if (other.tag == "Customer")
 		{
-			Debug.Log("Dropped off the Package!");
+			if (hasPackage == true)
+			{
+				Debug.Log("Dropped off the Package!");
+			} else
+			{
+				Debug.Log("You haven't picked up my package!");
+			}
 		}
 	}
 	#endregion
