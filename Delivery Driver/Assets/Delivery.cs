@@ -18,7 +18,15 @@ public class Delivery : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("Picked up package");
+		if (other.tag == "Package")
+		{
+			Debug.Log("Picked up the Package!");
+		}
+
+		if (other.tag == "Customer")
+		{
+			Debug.Log("Dropped off the Package!");
+		}
 	}
 	#endregion
 
