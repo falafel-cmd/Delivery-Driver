@@ -10,7 +10,7 @@ public class Driver : MonoBehaviour
     #region Variables
     [SerializeField] float steerSpeed = 150f;
     [SerializeField] float baseSpeed = 6.5f;
-    [SerializeField] float slowSpeed = 5f;
+    [SerializeField] float slowSpeed = 2f;
     [SerializeField] float boostSpeed = 8f;
 
     float moveSpeed = 0f;
