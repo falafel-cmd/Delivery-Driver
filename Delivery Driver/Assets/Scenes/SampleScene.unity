@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steerSpeed: 150
   baseSpeed: 6.5
-  slowSpeed: 5
+  slowSpeed: 2
   boostSpeed: 8
 --- !u!50 &31141327
 Rigidbody2D:
